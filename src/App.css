@@ -1,0 +1,141 @@
+body{
+  background-color: #eee;
+}
+.header{
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to bottom, green, rgb(62, 227, 7));
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  font-size: 24 px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.product{
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width: 32%;
+  text-align: center;
+  line-height: 30px;
+}
+.product img{
+  width: 250px;
+  height: 250px;
+}
+.product h5 {
+  font-size: 20px;
+}
+.product .price{
+  font-size: 20px;
+}
+.product .actions{
+  display: flex;
+  align-items: center;
+}
+.actions button{
+  height: 40px;
+  padding: 0 15px;
+  flex:1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.actions button[disabled]{
+  opacity: .4;
+  cursor: not-allowed;
+}
+.actions .buy-button{
+  background-color: rgb(18, 204, 18);
+  font-weight: bold;
+}
+.actions .sel-button{
+  background-color: rgb(240, 93, 93);
+  font-weight: bold;
+}
+.actions .amount{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(116, 73, 21);
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  margin: 0 2px;
+}
+.header span{
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+.billgates{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.billgates img{
+  margin-top: 25px;
+  border-radius: 50%;
+  width: 150px;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products-div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.basket-container{
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius:  0 0 5px 5px;
+}
+.basket-container h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.basket-container .total{
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin-top: 10px ;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+.basket-item{
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.basket-item span{
+  color : darkgray;
+}
+.reset-basket{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkred;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #fff;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 50px;
+  padding: 10px 0;
+  cursor: pointer;
+}
